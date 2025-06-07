@@ -1,5 +1,4 @@
-
-# Stage 1: build
+# Build React app
 FROM node:18-alpine as build
 
 WORKDIR /app
@@ -8,8 +7,5 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Stage 2: serve build using nginx
-FROM nginx:alpine
+# No runtime image here - build artifacts will be copied by nginx image
 
-COPY --from=build /app/build /usr/share/nginx/html
-EXPOSE 80
