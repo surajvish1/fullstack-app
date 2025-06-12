@@ -44,10 +44,13 @@ Copy code
 ```bash
 git clone https://github.com/surajvish1/fullstack-app.git
 cd fullstack-app
+
 🏗️ Build & Run the App
+
 bash
 Copy code
 sudo docker-compose up --build
+
 ✅ This will:
 
 Build the backend (Node.js API)
