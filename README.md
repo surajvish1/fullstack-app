@@ -53,6 +53,10 @@ You should see the React frontend showing:
 React Frontend
 Message from backend: Hello from Node.js!
 
+# OUTPUT:
+![Screenshot (38)](https://github.com/user-attachments/assets/db1e1b07-0336-424f-9b6f-7eaf655b7a98)
+
+
 ---------------------------------------------
 🛠️ Troubleshooting
 Permission Denied on Docker Socket
