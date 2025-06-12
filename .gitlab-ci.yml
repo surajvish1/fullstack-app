@@ -1,0 +1,27 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_DRIVER: overlay2
+  COMPOSE_FILE: docker-compose.yml
+
+before_script:
+  - echo "Running on EC2 self-hosted runner..."
+  - docker info
+
+build:
+  stage: build
+  script:
+    - echo "🔧 Building frontend and backend Docker images..."
+    - docker-compose build
+
+deploy:
+  stage: deploy
+  script:
+    - echo "🚀 Starting fullstack app with docker-compose..."
+    - docker-compose up -d
+  only:
+    - master  # or replace with 'master' if that's your main branch
+
