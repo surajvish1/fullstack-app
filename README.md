@@ -36,7 +36,7 @@ fullstack-app/
 ---
 
 ### 📦 Clone the Repository
-
+use Master Branch
 git clone https://github.com/surajvish1/fullstack-app.git
 cd fullstack-app
 
@@ -44,7 +44,7 @@ cd fullstack-app
 
 sudo docker-compose up --build
 
-
+-----------------------------------
 🌐 Access the Application
 Once running, open your browser:
 
@@ -53,13 +53,11 @@ You should see the React frontend showing:
 React Frontend
 Message from backend: Hello from Node.js!
 
-
+---------------------------------------------
 🛠️ Troubleshooting
 Permission Denied on Docker Socket
 Run with sudo or add your user to docker group:
 
-bash
-Copy code
 sudo usermod -aG docker $USER
 newgrp docker
 React shows no backend message
