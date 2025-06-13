@@ -23,5 +23,5 @@ deploy:
     - echo "🚀 Starting fullstack app with docker-compose..."
     - docker-compose up -d
   only:
-    - master  # or replace with 'master' if that's your main branch
+    - master
 
